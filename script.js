@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show the appropriate message or button based on the active session
             if (activeSession === 'Replace Soundbox') {
                 showMessage(
-                    'The available replacement charge of the merchant is 299 Rs. This amount will be collected by the Paytm agent.'
+                    'The available replacement charge of the merchant is 199 Rs. This amount will be collected by the Paytm agent.'
                 );
             } else if (activeSession === 'Disclose Soundbox') {
                 showDiscloseMessageAndButton(email, imei);
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             lifetimeBox.className = 'lifetime-plan-box';
             lifetimeBox.innerHTML = `
                 <p class="text-lg font-semibold mb-4">
-                    The lifetime plan for the Paytm Soundbox for this merchant is 499 Rs. The payment will be collected by the Paytm agent.
+                    The lifetime plan for the Paytm Soundbox for this merchant is 525 Rs. The payment will be collected by the Paytm agent.
                 </p>
                 <button id="applyOfferButton" class="custom-button">Apply Offer</button>
                 <div id="promoCodeSection" class="hidden mt-4">
@@ -167,10 +167,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const promoMessage = document.getElementById('promoMessage');
     
                 if (promoCodeInput === 'payayu') {
-                    promoMessage.textContent = 'Promo code applied! You get 100 Rs off. Final charge: 399 Rs.';
+                    promoMessage.textContent = 'Promo code applied! You get 100 Rs off. Final charge: 425 Rs.';
                     promoMessage.classList.remove('hidden');
                 } else {
-                    promoMessage.textContent = 'Invalid promo code. Final charge: 499 Rs.';
+                    promoMessage.textContent = 'Invalid promo code. Final charge: 425 Rs.';
                     promoMessage.classList.remove('hidden');
                 }
             });
